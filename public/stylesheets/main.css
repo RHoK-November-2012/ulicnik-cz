@@ -1,94 +1,185 @@
-
 body {
     background-color: #000000;
 }
-
 .clearBoth {
-    clear:both;
+    clear: both;
 }
-
+.header {
+    width: 1012px;
+}
 .header:after {
     clear: both;
 }
 
-.headerElement {
-    float:left;
+.container {
+    margin-left: 10%;
 }
 
-.headerText {
+.headerLogo, .headerMoto, .headerSocialIcons {
+    border-left: 400px;
+    float: left;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.headerMoto {
     color: white;
-    font: arial;
+    font-family: Helvetica,monospace;
+    font-size: 22pt;
+    padding-left: 50px;
+}
+
+.headerSocialIcons {
+    float: right;
 }
 
 .callForIdea {
-    width: 495px;
-    height: 74px;
     background-color: #5FD4E5;
-    font: arial;
-    font-size: 24pt;
-    float:left;
+    border-top: 5px;
+    color: white;
+    float: left;
+    font-family: Helvetica,monospace;
+    font-size: 22pt;
+    height: 74px;
+    margin-left: 11px;
+    padding-left: 40px;
+    padding-top: 8px;
+    width: 495px;
+    cursor: pointer;
 }
 
 .filters {
-    float:left;
+    float: left;
 }
-
 .filterWhat {
-    width: 216px;
-    height: 35px;
-    font: arial;
     font-size: 24pt;
+    height: 35px;
+    padding-left: 11px;
+    width: 216px;
 }
-
-/* 4px between what and where */
-
 .filterWhere {
-    width: 216px;
-    height: 35px;
-    font: arial;
     font-size: 24pt;
+    height: 35px;
+    padding-left: 11px;
+    width: 216px;
 }
-
-
 .issueBox {
-    width: 495px;
-    height: 260px;
     background-color: #D33060;
+    float: left;
+    font-family: Helvetica,monospace;
     font-size: 42pt;
     font-weight: bold;
-    /*
-       simple kerning
-    */
-    float:left;
+    height: 260px;
     margin-left: 11px;
     margin-top: 11px;
+    padding-left: 40px;
+    padding-top: 75px;
+    width: 495px;
 }
-
 .issueBoxPlace {
-    height: 33px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    font: arial;
     font-size: 20pt;
+    height: 33px;
+    padding-bottom: 15px;
+    padding-right: 15px;
 }
-
 .counterBox {
-    height: 74px;
-    width: 74px;
-    font: arial;
-    font-size: 24pt;
     background-color: #5FD4E5;
-    float:left;
+    border-top: 10px;
+    color: white;
+    float: left;
+    font-family: Helvetica,monospace;
+    font-size: 24pt;
+    height: 74px;
+    margin-top: 10px;
+    padding-top: 8px;
     text-align: center;
     vertical-align: middle;
+    width: 74px;
 }
-
-/* Zkusme změnit veřejný prostor společně */
 .headerText {
-    font: arial;
-    font-size: 30pt;
+    font-size: 20pt;
 }
-
 .underline {
     text-decoration: underline;
 }
+
+.spanIssueText1 {
+    color: #000000;
+    background-color: green;
+}
+
+.spanIssueText2 {
+    color: white;
+    background-color: #000000;
+}
+
+
+/* Issue page */
+
+.issueBoxDetail {
+    height: 293px;
+    width: 550px;
+    /* same color as issueBox */
+}
+
+.issueInfo {
+    height: 79px;
+    width: 442px;
+}
+.issueInfoLeft {
+    font-size: 15pt;
+}
+.issueInfoRight {
+    font-size: 15pt;
+}
+
+.issuePlace {
+    height: 55px;
+    width: 442px;
+    font-size: 24pt;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.issueDescription {
+    height: 149px;
+    width: 442px;
+    background-color: #5FD4E5;
+}
+
+.timeLine {
+
+}
+
+/** facebook */
+.discussionBox {
+    height: 293px;
+    width: 589px;
+    background-color: #6DBE40;
+}
+
+.addTask {
+    height: 29px;
+    width: 215px;
+    background-color: #E6E6E6;
+}
+
+.addTask {
+    height: 29px;
+    width: 215px;
+    background-color: green;
+}
+
+.imageGallery {
+    height: 133px;
+    width: 379px;
+    background-color: transparent;
+}
+/**
+in the middle separate
+gotham font
+*/
+
+

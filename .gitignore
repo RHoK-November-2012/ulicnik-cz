@@ -1,0 +1,11 @@
+# IDE files  #
+##############
+.idea
+.idea_modules
+.settings
+target
+
+# Log files #
+#############
+log
+

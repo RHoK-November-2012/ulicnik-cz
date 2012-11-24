@@ -1,32 +1,37 @@
-@(message: String)
+@(callForIdea: CallForIdea, issues: List[Issue])
 
 @main("Homepage") {
 
-  <div>
-      <div class="callForIdea inline">@message</div>
-      <div class="filters inline">
-          <div class="filterWhat"><input tpye="text" maxlength="10" value="Co"></div>
-          <div class="filterWhere"><input tpye="text" maxlength="10" value="Kde"></div>
-      </div>
-      <div class="counterBox inline">
-          <div style="vertical-align: middle;">
+<div>
+    <div class="callForIdea inline">@callForIdea.message!</div>
+    <div class="filters inline">
+        <div class="filterWhat"><input tpye="text" maxlength="10" value="Co"></div>
+        <div class="filterWhere"><input tpye="text" maxlength="10" value="Kde"></div>
+    </div>
+    <div class="counterBox inline">
+        <div style="vertical-align: middle;">
             20
-          </div>
-      </div>
-      <br class="clearBoth"/>
-  </div>
+        </div>
+    </div>
+    <br class="clearBoth"/>
+</div>
 
-  <div>
-      <div>
-          <div class="issueBox inline">Problém 1</div>
-          <div class="issueBox inline">Problém 2</div>
-          <br class="clearBoth"/>
-      </div>
-      <div>
-          <div class="issueBox inline">Problém 3</div>
-          <div class="issueBox inline">Problém 4</div>
-          <br class="clearBoth"/>
-      </div>
-  </div>
+@if(issues.isEmpty()) {
+<h1>Sláva, nejsou problémy</h1>
+} else {
 
+    @for((issue, index) <- issues.zipWithIndex) {
+      @if(index % 2 == 0) {
+        <div>
+            <div class="issueBox inline"><span class="spanIssueText1">@issue.title</span></div>
+      } else {
+            <div class="issueBox inline"><span class="spanIssueText2">@issue.title</span></div>
+      }
+      @if(index % 2 != 0 || index + 1 == issues.size()) {
+            <br class="clearBoth"/>
+        </div>
+      }
+    }
 }
+}
+
