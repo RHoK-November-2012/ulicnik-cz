@@ -1,0 +1,32 @@
+@(message: String)
+
+@main("Homepage") {
+
+  <div>
+      <div class="callForIdea inline">@message</div>
+      <div class="filters inline">
+          <div class="filterWhat"><input tpye="text" maxlength="10" value="Co"></div>
+          <div class="filterWhere"><input tpye="text" maxlength="10" value="Kde"></div>
+      </div>
+      <div class="counterBox inline">
+          <div style="vertical-align: middle;">
+            20
+          </div>
+      </div>
+      <br class="clearBoth"/>
+  </div>
+
+  <div>
+      <div>
+          <div class="issueBox inline">Problém 1</div>
+          <div class="issueBox inline">Problém 2</div>
+          <br class="clearBoth"/>
+      </div>
+      <div>
+          <div class="issueBox inline">Problém 3</div>
+          <div class="issueBox inline">Problém 4</div>
+          <br class="clearBoth"/>
+      </div>
+  </div>
+
+}

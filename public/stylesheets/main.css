@@ -1,0 +1,94 @@
+
+body {
+    background-color: #000000;
+}
+
+.clearBoth {
+    clear:both;
+}
+
+.header:after {
+    clear: both;
+}
+
+.headerElement {
+    float:left;
+}
+
+.headerText {
+    color: white;
+    font: arial;
+}
+
+.callForIdea {
+    width: 495px;
+    height: 74px;
+    background-color: #5FD4E5;
+    font: arial;
+    font-size: 24pt;
+    float:left;
+}
+
+.filters {
+    float:left;
+}
+
+.filterWhat {
+    width: 216px;
+    height: 35px;
+    font: arial;
+    font-size: 24pt;
+}
+
+/* 4px between what and where */
+
+.filterWhere {
+    width: 216px;
+    height: 35px;
+    font: arial;
+    font-size: 24pt;
+}
+
+
+.issueBox {
+    width: 495px;
+    height: 260px;
+    background-color: #D33060;
+    font-size: 42pt;
+    font-weight: bold;
+    /*
+       simple kerning
+    */
+    float:left;
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.issueBoxPlace {
+    height: 33px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font: arial;
+    font-size: 20pt;
+}
+
+.counterBox {
+    height: 74px;
+    width: 74px;
+    font: arial;
+    font-size: 24pt;
+    background-color: #5FD4E5;
+    float:left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Zkusme změnit veřejný prostor společně */
+.headerText {
+    font: arial;
+    font-size: 30pt;
+}
+
+.underline {
+    text-decoration: underline;
+}

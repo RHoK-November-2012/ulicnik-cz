@@ -1,0 +1,147 @@
+2012-11-24 14:48:41,386 - [INFO] - from play in main 
+Listening for HTTP on port 9000...
+
+2012-11-24 14:49:07,401 - [INFO] - from play in play-akka.actor.default-dispatcher-3 
+Application started (Dev)
+
+2012-11-24 14:55:33,800 - [INFO] - from play in play-akka.actor.default-dispatcher-4 
+Application started (Dev)
+
+2012-11-24 15:03:01,397 - [INFO] - from play in play-akka.actor.default-dispatcher-4 
+Application started (Dev)
+
+2012-11-24 15:11:09,542 - [INFO] - from play in play-akka.actor.default-dispatcher-5 
+Application started (Dev)
+
+2012-11-24 15:11:48,526 - [INFO] - from play in play-akka.actor.default-dispatcher-7 
+Application started (Dev)
+
+2012-11-24 15:12:08,857 - [INFO] - from play in play-akka.actor.default-dispatcher-8 
+Application started (Dev)
+
+2012-11-24 15:12:18,549 - [INFO] - from play in play-akka.actor.default-dispatcher-8 
+Application started (Dev)
+
+2012-11-24 15:14:49,666 - [INFO] - from play in play-akka.actor.default-dispatcher-10 
+Application started (Dev)
+
+2012-11-24 15:15:02,508 - [INFO] - from play in play-akka.actor.default-dispatcher-11 
+Application started (Dev)
+
+2012-11-24 15:17:32,026 - [INFO] - from play in play-akka.actor.default-dispatcher-12 
+Application started (Dev)
+
+2012-11-24 15:18:02,395 - [INFO] - from play in play-akka.actor.default-dispatcher-13 
+Application started (Dev)
+
+2012-11-24 15:18:37,732 - [INFO] - from play in play-akka.actor.default-dispatcher-13 
+Application started (Dev)
+
+2012-11-24 15:19:46,955 - [INFO] - from play in play-akka.actor.default-dispatcher-15 
+Application started (Dev)
+
+2012-11-24 15:26:31,852 - [INFO] - from play in play-akka.actor.default-dispatcher-20 
+Application started (Dev)
+
+2012-11-24 15:34:30,664 - [ERROR] - from application in New I/O  worker #7 
+
+
+! Internal server error, for request [GET /homepage] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error [unclosed character literal]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$3$$anonfun$4$$anonfun$apply$12$$anonfun$apply$13.apply(PlayReloader.scala:236) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$3$$anonfun$4$$anonfun$apply$12$$anonfun$apply$13.apply(PlayReloader.scala:236) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.3]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$3$$anonfun$4$$anonfun$apply$12.apply(PlayReloader.scala:236) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$3$$anonfun$4$$anonfun$apply$12.apply(PlayReloader.scala:233) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.3]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$3$$anonfun$4.apply(PlayReloader.scala:233) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$3$$anonfun$4.apply(PlayReloader.scala:231) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:183) ~[scala-library.jar:0.11.3]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$3.apply(PlayReloader.scala:231) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$3.apply(PlayReloader.scala:226) ~[na:na]
+	at scala.Option.getOrElse(Option.scala:108) ~[scala-library.jar:0.11.3]
+	at sbt.PlayReloader$$anon$2.reload(PlayReloader.scala:226) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.9.1.jar:2.0.4]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.9.1.jar:2.0.4]
+	at akka.dispatch.Future$$anon$3.liftedTree1$1(Future.scala:195) ~[akka-actor.jar:2.0.2]
+	at akka.dispatch.Future$$anon$3.run(Future.scala:194) ~[akka-actor.jar:2.0.2]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:94) ~[akka-actor.jar:2.0.2]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1381) ~[akka-actor.jar:2.0.2]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:259) ~[akka-actor.jar:2.0.2]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:975) ~[akka-actor.jar:2.0.2]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1479) ~[akka-actor.jar:2.0.2]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor.jar:2.0.2]
+
+2012-11-24 15:35:13,698 - [INFO] - from play in play-akka.actor.default-dispatcher-20 
+Application started (Dev)
+
+2012-11-24 15:36:59,852 - [INFO] - from play in play-akka.actor.default-dispatcher-20 
+Application started (Dev)
+
+2012-11-24 15:37:56,127 - [INFO] - from play in play-akka.actor.default-dispatcher-20 
+Application started (Dev)
+
+2012-11-24 15:38:10,704 - [INFO] - from play in play-akka.actor.default-dispatcher-20 
+Application started (Dev)
+
+2012-11-24 15:39:03,530 - [INFO] - from play in play-akka.actor.default-dispatcher-24 
+Application started (Dev)
+
+2012-11-24 15:40:31,735 - [INFO] - from play in play-akka.actor.default-dispatcher-25 
+Application started (Dev)
+
+2012-11-24 15:42:53,715 - [INFO] - from play in play-akka.actor.default-dispatcher-26 
+Application started (Dev)
+
+2012-11-24 15:43:11,211 - [INFO] - from play in play-akka.actor.default-dispatcher-27 
+Application started (Dev)
+
+2012-11-24 15:43:37,403 - [INFO] - from play in play-akka.actor.default-dispatcher-28 
+Application started (Dev)
+
+2012-11-24 15:44:11,093 - [INFO] - from play in play-akka.actor.default-dispatcher-28 
+Application started (Dev)
+
+2012-11-24 15:46:03,027 - [INFO] - from play in play-akka.actor.default-dispatcher-30 
+Application started (Dev)
+
+2012-11-24 15:46:11,439 - [INFO] - from play in play-akka.actor.default-dispatcher-31 
+Application started (Dev)
+
+2012-11-24 15:48:06,763 - [INFO] - from play in play-akka.actor.default-dispatcher-31 
+Application started (Dev)
+
+2012-11-24 15:48:34,254 - [INFO] - from play in play-akka.actor.default-dispatcher-33 
+Application started (Dev)
+
+2012-11-24 15:49:46,699 - [INFO] - from play in play-akka.actor.default-dispatcher-33 
+Application started (Dev)
+
+2012-11-24 15:50:23,970 - [INFO] - from play in play-akka.actor.default-dispatcher-35 
+Application started (Dev)
+
+2012-11-24 15:50:44,956 - [INFO] - from play in play-akka.actor.default-dispatcher-35 
+Application started (Dev)
+
+2012-11-24 15:50:57,964 - [INFO] - from play in play-akka.actor.default-dispatcher-37 
+Application started (Dev)
+
+2012-11-24 15:52:29,969 - [INFO] - from play in play-akka.actor.default-dispatcher-38 
+Application started (Dev)
+
+2012-11-24 15:52:45,831 - [INFO] - from play in play-akka.actor.default-dispatcher-38 
+Application started (Dev)
+
+2012-11-24 15:57:15,561 - [INFO] - from play in play-akka.actor.default-dispatcher-38 
+Application started (Dev)
+
+2012-11-24 16:00:27,195 - [INFO] - from play in play-akka.actor.default-dispatcher-45 
+Application started (Dev)
+
+2012-11-24 16:02:32,616 - [INFO] - from play in play-akka.actor.default-dispatcher-47 
+Application started (Dev)
+
+2012-11-24 16:02:58,387 - [INFO] - from play in play-akka.actor.default-dispatcher-48 
+Application started (Dev)
+
