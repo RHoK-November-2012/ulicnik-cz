@@ -10,10 +10,13 @@ public class Issue {
 
     public String place;
 
+    public Status status;
+
     public Issue(String title, String description, String imageHref, String place) {
         this.title = title;
         this.description = description;
         this.imageHref = imageHref;
         this.place = place;
+        this.status = Status.WAITING;
     }
 }

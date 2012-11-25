@@ -3,29 +3,45 @@
 @main("Homepage") {
 
 <div>
-    <div class="callForIdea inline">@callForIdea.message!</div>
-    <div class="filters inline">
+    <img class="inline" src='@routes.Assets.at("images/ikonka-tlacitko-small.png")'/>
+
+    <div class="callForIdea inline">
+        <div class="leftFloat inline">Máte nápad,<br/>jak změnit veřejný prostor?</div>
+        <div class="callForIdeaIcon inline" style="float: right;"><img class="inline" src='@routes.Assets.at("images/ikonka-tlacitko-small.png")'/></div>
+    </div>
+    <div class="leftFloat inline">
         <div class="filterWhat"><input tpye="text" maxlength="10" value="Co"></div>
         <div class="filterWhere"><input tpye="text" maxlength="10" value="Kde"></div>
     </div>
-    <div class="counterBox inline">
-        <div style="vertical-align: middle;">
-            20
+    <div class="countersBox inline">
+        <div class="leftFloat inline">
+            <div class="nowrap"><b>Nápadů: </b>34</div>
+            <div class="nowrap"><b>Hotové: </b>12</div>
+        </div>
+        <div class="leftFloat inline">
+            <div class="nowrap"><b>V běhu: </b>10</div>
+            <div class="nowrap"><b>Čekající: </b>12</div>
         </div>
     </div>
     <br class="clearBoth"/>
 </div>
 
 @if(issues.isEmpty()) {
-<h1>Sláva, nejsou problémy</h1>
+<h1><div>Sláva, nejsou problémy</div></h1>
 } else {
 
     @for((issue, index) <- issues.zipWithIndex) {
       @if(index % 2 == 0) {
         <div>
-            <div class="issueBox inline"><span class="spanIssueText1">@issue.title</span></div>
+            <div class="issueBox inline">
+                <img class="issueImg inline" src='@routes.Assets.at(issue.imageHref + "/001.jpg")'/>
+                <span class="spanIssueTextColor1 font size24">@issue.title</span>
+            </div>
       } else {
-            <div class="issueBox inline"><span class="spanIssueText2">@issue.title</span></div>
+            <div class="issueBox inline">
+                <img class="issueImg inline" src='@routes.Assets.at(issue.imageHref + "/001.jpg")'/>
+                <span class="spanIssueTextColor2 font size24">@issue.title</span>
+            </div>
       }
       @if(index % 2 != 0 || index + 1 == issues.size()) {
             <br class="clearBoth"/>
@@ -34,4 +50,3 @@
     }
 }
 }
-
